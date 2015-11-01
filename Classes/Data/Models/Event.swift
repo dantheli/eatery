@@ -60,4 +60,23 @@ struct Event {
     func occurringOnDate(date: NSDate) -> Bool {
         return startDate.compare(date) != .OrderedDescending && endDate.compare(date) != .OrderedAscending
     }
+    
+    // returns an iterable menu with category:[item] tuples
+    // ex: ("Entrees",["Chicken", "Steak", "Fish"])
+    func getMenuIterable() {
+        var iterableMenu:[(String,[String])] = []
+        let keys = [String] (menu.keys)
+        for key in keys {
+            if let menuItems:[MenuItem] = menu[key] {
+                var menuList:[String] = []
+                for item in menuItems {
+                    menuList.append(item.name)
+                }
+                if menuList.count > 0 {
+                    let subMenu = (key,menuList)
+                    iterableMenu.append(subMenu)
+                }
+            }
+        }
+    }
 }
