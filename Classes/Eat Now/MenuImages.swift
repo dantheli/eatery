@@ -42,7 +42,7 @@ class MenuImages: NSObject {
             headerLabel.textColor = fontColor
             
             //create item list for category
-            let itemTextView = UITextView(frame: CGRectMake(0, headerLabel.frame.height + dividerSize * 2, width, 0))
+            let itemTextView = UITextView(frame: CGRectMake(0, headerLabel.frame.height + dividerSize * 2, width, width * 3))
             itemTextView.backgroundColor = bodyColor
             itemTextView.textAlignment = .Left
             var menuText = ""
@@ -159,7 +159,8 @@ class MenuImages: NSObject {
         menuHeader.addSubview(bar)
         
         //create payment options image
-        let paymentOptionView = UIImageView(frame: CGRectMake(0, 0, 50, 50))
+        //TODO
+        //let paymentOptionView = UIImageView(frame: CGRectMake(0, 0, 50, 50))
         //set image
         
         
@@ -186,7 +187,7 @@ class MenuImages: NSObject {
             headerLabel.textColor = fontColor
             
             //create item list for category
-            let itemTextView = UITextView(frame: CGRectMake(0, headerLabel.frame.height + dividerSize * 2, width, 0))
+            let itemTextView = UITextView(frame: CGRectMake(0, headerLabel.frame.height + dividerSize * 2, width, width * 3))
             itemTextView.backgroundColor = bodyColor
             itemTextView.textAlignment = .Left
             var menuText = ""
