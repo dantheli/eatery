@@ -199,4 +199,27 @@ class Eatery: NSObject {
         return next
     }
     
+    // returns an iterable menu with category:[item] tuples
+    // ex: ("Entrees",["Chicken", "Steak", "Fish"])
+    func getHardcodeMenuIterable() -> [(String,[String])] {
+        var iterableMenu:[(String,[String])] = []
+        if hardcodedMenu == nil {
+            return []
+        }
+        let keys = [String] (hardcodedMenu!.keys)
+        for key in keys {
+            if let menuItems:[MenuItem] = hardcodedMenu![key] {
+                var menuList:[String] = []
+                for item in menuItems {
+                    menuList.append(item.name)
+                }
+                if menuList.count > 0 {
+                    let subMenu = (key,menuList)
+                    iterableMenu.append(subMenu)
+                }
+            }
+        }
+        return iterableMenu
+    }
+    
  }

@@ -63,7 +63,7 @@ struct Event {
     
     // returns an iterable menu with category:[item] tuples
     // ex: ("Entrees",["Chicken", "Steak", "Fish"])
-    func getMenuIterable() {
+    func getMenuIterable() -> [(String,[String])] {
         var iterableMenu:[(String,[String])] = []
         let keys = [String] (menu.keys)
         for key in keys {
@@ -78,5 +78,6 @@ struct Event {
                 }
             }
         }
+        return iterableMenu
     }
 }

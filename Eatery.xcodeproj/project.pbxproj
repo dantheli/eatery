@@ -25,6 +25,7 @@
 		95434FC51BD8699F003612DB /* SubmitBugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95434FB41BD8699F003612DB /* SubmitBugViewController.swift */; };
 		95434FC61BD8699F003612DB /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95434FB51BD8699F003612DB /* Tools.swift */; };
 		95434FC71BD8699F003612DB /* Tweaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95434FB61BD8699F003612DB /* Tweaks.swift */; };
+		95A9F9FE1BF9096E0054D387 /* MenuImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A9F9FD1BF9096E0054D387 /* MenuImages.swift */; };
 		C00367301B64DC32002839C3 /* testMenu.json in Resources */ = {isa = PBXBuildFile; fileRef = C003672F1B64DC32002839C3 /* testMenu.json */; };
 		C0497AF61B64AA1800AC1C6C /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0497ACC1B64AA1800AC1C6C /* Keys.swift */; };
 		C0497AF71B64AA1800AC1C6C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0497ACD1B64AA1800AC1C6C /* DataManager.swift */; };
@@ -156,6 +157,7 @@
 		95434FB41BD8699F003612DB /* SubmitBugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitBugViewController.swift; sourceTree = "<group>"; };
 		95434FB51BD8699F003612DB /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		95434FB61BD8699F003612DB /* Tweaks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweaks.swift; sourceTree = "<group>"; };
+		95A9F9FD1BF9096E0054D387 /* MenuImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuImages.swift; sourceTree = "<group>"; };
 		C003672F1B64DC32002839C3 /* testMenu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testMenu.json; sourceTree = "<group>"; };
 		C007CABF19E1BEAC00E3BD46 /* Eatery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eatery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0142A0F1B68C5C90090B33A /* Pods.app store.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods.app store.xcconfig"; path = "Pods/Target Support Files/Pods/Pods.app store.xcconfig"; sourceTree = "<group>"; };
@@ -430,6 +432,7 @@
 			children = (
 				C0497AE91B64AA1800AC1C6C /* Root View Controller */,
 				C0497ADD1B64AA1800AC1C6C /* Detail View Controller */,
+				95A9F9FD1BF9096E0054D387 /* MenuImages.swift */,
 			);
 			path = "Eat Now";
 			sourceTree = "<group>";
@@ -834,6 +837,7 @@
 				C0497B131B64AA1800AC1C6C /* UIColor+ColorScheme.swift in Sources */,
 				95434FC61BD8699F003612DB /* Tools.swift in Sources */,
 				C0497AFE1B64AA1800AC1C6C /* GeneralMenus.swift in Sources */,
+				95A9F9FE1BF9096E0054D387 /* MenuImages.swift in Sources */,
 				C0497B001B64AA1800AC1C6C /* Eatery.swift in Sources */,
 				C0497B081B64AA1800AC1C6C /* SegmentedHeader.swift in Sources */,
 				95434FB71BD8699F003612DB /* ADScreenCapture.swift in Sources */,
