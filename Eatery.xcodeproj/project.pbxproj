@@ -72,6 +72,17 @@
 		C066488A1B64B0E800E02A3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0497B1E1B64AA3800AC1C6C /* LaunchScreen.xib */; };
 		C0F182FA1B674B1300063D77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F182F81B674B1300063D77 /* AppDelegate.swift */; };
 		C0F182FC1B674DCB00063D77 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F182FB1B674DCB00063D77 /* AnalyticsManager.swift */; };
+		D18727601C097BE100C4636E /* EateryHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D187275E1C097BE100C4636E /* EateryHeaderTableViewCell.swift */; };
+		D18727611C097BE100C4636E /* EateryHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D187275F1C097BE100C4636E /* EateryHeaderTableViewCell.xib */; };
+		D18727641C097C0B00C4636E /* EateryMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18727621C097C0B00C4636E /* EateryMenuTableViewCell.swift */; };
+		D18727651C097C0B00C4636E /* EateryMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D18727631C097C0B00C4636E /* EateryMenuTableViewCell.xib */; };
+		D18727681C097C3C00C4636E /* TitleSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18727661C097C3C00C4636E /* TitleSectionTableViewCell.swift */; };
+		D18727691C097C3C00C4636E /* TitleSectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D18727671C097C3C00C4636E /* TitleSectionTableViewCell.xib */; };
+		D187276C1C0985FF00C4636E /* FilterEateriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D187276A1C0985FF00C4636E /* FilterEateriesTableViewCell.swift */; };
+		D187276D1C0985FF00C4636E /* FilterEateriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D187276B1C0985FF00C4636E /* FilterEateriesTableViewCell.xib */; };
+		D187276F1C0996C700C4636E /* LookAheadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D187276E1C0996C700C4636E /* LookAheadViewController.swift */; };
+		D18727711C09AA4600C4636E /* FilterDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18727701C09AA4600C4636E /* FilterDateView.swift */; };
+		D18727731C09AA5600C4636E /* FilterDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D18727721C09AA5600C4636E /* FilterDateView.xib */; };
 		FA1E4B831BD41A5A00DBD076 /* hardcodedMenus.json in Resources */ = {isa = PBXBuildFile; fileRef = FA1E4B821BD41A5A00DBD076 /* hardcodedMenus.json */; };
 		FAA912BE1BE6A035003475A8 /* Eatery+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA912BD1BE6A035003475A8 /* Eatery+Extensions.swift */; };
 		FAC5A3181BC60DE50001DE97 /* 104-West+logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAC5A2E31BC60DE50001DE97 /* 104-West+logo.jpg */; };
@@ -250,6 +261,17 @@
 		C0F182F61B674B1300063D77 /* Eatery-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Eatery-Bridging-Header.h"; path = "Other-Sources/Eatery-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		C0F182F81B674B1300063D77 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Other-Sources/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		C0F182FB1B674DCB00063D77 /* AnalyticsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		D187275E1C097BE100C4636E /* EateryHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EateryHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		D187275F1C097BE100C4636E /* EateryHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EateryHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		D18727621C097C0B00C4636E /* EateryMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EateryMenuTableViewCell.swift; sourceTree = "<group>"; };
+		D18727631C097C0B00C4636E /* EateryMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EateryMenuTableViewCell.xib; sourceTree = "<group>"; };
+		D18727661C097C3C00C4636E /* TitleSectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSectionTableViewCell.swift; sourceTree = "<group>"; };
+		D18727671C097C3C00C4636E /* TitleSectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleSectionTableViewCell.xib; sourceTree = "<group>"; };
+		D187276A1C0985FF00C4636E /* FilterEateriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterEateriesTableViewCell.swift; sourceTree = "<group>"; };
+		D187276B1C0985FF00C4636E /* FilterEateriesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterEateriesTableViewCell.xib; sourceTree = "<group>"; };
+		D187276E1C0996C700C4636E /* LookAheadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookAheadViewController.swift; sourceTree = "<group>"; };
+		D18727701C09AA4600C4636E /* FilterDateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterDateView.swift; sourceTree = "<group>"; };
+		D18727721C09AA5600C4636E /* FilterDateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterDateView.xib; sourceTree = "<group>"; };
 		D18D9C591BAF2B5200C9D95D /* Analytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Analytics.framework; path = "Pods/../build/Debug-iphoneos/Analytics.framework"; sourceTree = SOURCE_ROOT; };
 		D18D9C5B1BAF2BF100C9D95D /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = SOURCE_ROOT; };
 		D18D9C5D1BAF2BF400C9D95D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = SOURCE_ROOT; };
@@ -481,6 +503,7 @@
 				95495D2D1C0AA0790015B85E /* MenuImages.swift */,
 				C0497AE91B64AA1800AC1C6C /* Root View Controller */,
 				C0497ADD1B64AA1800AC1C6C /* Detail View Controller */,
+				D187275C1C097ACB00C4636E /* Look Ahead View Controller */,
 			);
 			path = "Eat Now";
 			sourceTree = "<group>";
@@ -658,6 +681,33 @@
 			path = "Classes/Other-Sources";
 			sourceTree = "<group>";
 		};
+		D187275C1C097ACB00C4636E /* Look Ahead View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D187276E1C0996C700C4636E /* LookAheadViewController.swift */,
+				D18727701C09AA4600C4636E /* FilterDateView.swift */,
+				D18727721C09AA5600C4636E /* FilterDateView.xib */,
+				D187275D1C097AE300C4636E /* TableView Cells */,
+			);
+			name = "Look Ahead View Controller";
+			path = "Detail View Controller";
+			sourceTree = "<group>";
+		};
+		D187275D1C097AE300C4636E /* TableView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D18727661C097C3C00C4636E /* TitleSectionTableViewCell.swift */,
+				D18727671C097C3C00C4636E /* TitleSectionTableViewCell.xib */,
+				D187276A1C0985FF00C4636E /* FilterEateriesTableViewCell.swift */,
+				D187276B1C0985FF00C4636E /* FilterEateriesTableViewCell.xib */,
+				D187275E1C097BE100C4636E /* EateryHeaderTableViewCell.swift */,
+				D187275F1C097BE100C4636E /* EateryHeaderTableViewCell.xib */,
+				D18727621C097C0B00C4636E /* EateryMenuTableViewCell.swift */,
+				D18727631C097C0B00C4636E /* EateryMenuTableViewCell.xib */,
+			);
+			name = "TableView Cells";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -713,7 +763,7 @@
 				TargetAttributes = {
 					4283B36E1BE6A17C003DE22E = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 2X3Y4V49XK;
+						DevelopmentTeam = S9S784A2B4;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -780,6 +830,7 @@
 				FAC5A3321BC60DE50001DE97 /* Goldies-Cafe+logo.jpg in Resources */,
 				FAC5A32A1BC60DE50001DE97 /* Carols-Cafe+logo.jpg in Resources */,
 				C0497B071B64AA1800AC1C6C /* SegmentedControlSectionHeaderView.xib in Resources */,
+				D18727651C097C0B00C4636E /* EateryMenuTableViewCell.xib in Resources */,
 				C0497B0A1B64AA1800AC1C6C /* HoursTableViewCell.xib in Resources */,
 				FAC5A33A1BC60DE50001DE97 /* Keeton-House-Dining+logo.jpg in Resources */,
 				FAC5A33C1BC60DE50001DE97 /* Marthas-Cafe+logo.jpg in Resources */,
@@ -793,15 +844,19 @@
 				FAC5A3411BC60DE50001DE97 /* risley-dining.jpg in Resources */,
 				FAC5A3201BC60DE50001DE97 /* bears-den.jpg in Resources */,
 				FAC5A3431BC60DE50001DE97 /* rose-house-dining.jpg in Resources */,
+				D18727731C09AA5600C4636E /* FilterDateView.xib in Resources */,
 				FAC5A3391BC60DE50001DE97 /* keeton-house-dining.jpg in Resources */,
 				FAC5A3291BC60DE50001DE97 /* carols-cafe.jpg in Resources */,
 				FAC5A31F1BC60DE50001DE97 /* Bear-Necessities+logo.jpg in Resources */,
 				FAC5A33B1BC60DE50001DE97 /* marthas-cafe.jpg in Resources */,
 				FAC5A3421BC60DE50001DE97 /* Risley-Dining+logo.jpg in Resources */,
+				D18727611C097BE100C4636E /* EateryHeaderTableViewCell.xib in Resources */,
+				D18727691C097C3C00C4636E /* TitleSectionTableViewCell.xib in Resources */,
 				FAC5A3491BC60DE50001DE97 /* synapsis-cafe.jpg in Resources */,
 				FAC5A3481BC60DE50001DE97 /* Rustys+logo.jpg in Resources */,
 				FAC5A3241BC60DE50001DE97 /* big-red-barn.jpg in Resources */,
 				FAC5A3311BC60DE50001DE97 /* Goldies-Cafe.jpg in Resources */,
+				D187276D1C0985FF00C4636E /* FilterEateriesTableViewCell.xib in Resources */,
 				FAC5A3301BC60DE50001DE97 /* Cornell-Dairy-Bar+logo.jpg in Resources */,
 				C0497B041B64AA1800AC1C6C /* EatNowDetailHeaderView.xib in Resources */,
 				FAC5A3351BC60DE50001DE97 /* Ivy-Room.jpg in Resources */,
@@ -901,12 +956,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				95434FBE1BD8699F003612DB /* FBTweak.m in Sources */,
+				D18727681C097C3C00C4636E /* TitleSectionTableViewCell.swift in Sources */,
 				C0497B0E1B64AA1800AC1C6C /* EatNowTableViewCell.swift in Sources */,
 				C0F182FA1B674B1300063D77 /* AppDelegate.swift in Sources */,
 				95434FC51BD8699F003612DB /* SubmitBugViewController.swift in Sources */,
 				95434FC71BD8699F003612DB /* Tweaks.swift in Sources */,
 				95434FC31BD8699F003612DB /* FBTweakStore.m in Sources */,
 				95434FC11BD8699F003612DB /* FBTweakInline.m in Sources */,
+				D187276F1C0996C700C4636E /* LookAheadViewController.swift in Sources */,
 				C0497AFF1B64AA1800AC1C6C /* LocationManager.swift in Sources */,
 				95434FBD1BD8699F003612DB /* _FBTweakTableViewCell.m in Sources */,
 				C0497BBE1B64AA3800AC1C6C /* MXLCalendarManager.m in Sources */,
@@ -919,8 +976,10 @@
 				C0497BBC1B64AA3800AC1C6C /* MXLCalendarAttendee.m in Sources */,
 				FAA912BE1BE6A035003475A8 /* Eatery+Extensions.swift in Sources */,
 				95434FBF1BD8699F003612DB /* FBTweakCategory.m in Sources */,
+				D18727601C097BE100C4636E /* EateryHeaderTableViewCell.swift in Sources */,
 				C0497B151B64AA1800AC1C6C /* Macros.swift in Sources */,
 				95434FC21BD8699F003612DB /* FBTweakShakeWindow.m in Sources */,
+				D18727641C097C0B00C4636E /* EateryMenuTableViewCell.swift in Sources */,
 				C0497BD21B64ACED00AC1C6C /* GlobalVars.swift in Sources */,
 				95434FC41BD8699F003612DB /* FBTweakViewController.m in Sources */,
 				95434FBA1BD8699F003612DB /* _FBTweakCategoryViewController.m in Sources */,
@@ -933,6 +992,7 @@
 				C0497AFB1B64AA1800AC1C6C /* GroupMeManager.swift in Sources */,
 				C0497BBD1B64AA3800AC1C6C /* MXLCalendarEvent.m in Sources */,
 				C0497BBA1B64AA3800AC1C6C /* MBProgressHUD.m in Sources */,
+				D187276C1C0985FF00C4636E /* FilterEateriesTableViewCell.swift in Sources */,
 				C0497B091B64AA1800AC1C6C /* HoursTableViewCell.swift in Sources */,
 				95434FB91BD8699F003612DB /* _FBTweakBindObserver.m in Sources */,
 				95434FC01BD8699F003612DB /* FBTweakCollection.m in Sources */,
@@ -942,6 +1002,7 @@
 				95434FB71BD8699F003612DB /* ADScreenCapture.swift in Sources */,
 				C0497B101B64AA1800AC1C6C /* EatNowTableViewController.swift in Sources */,
 				95434FBC1BD8699F003612DB /* _FBTweakDictionaryViewController.m in Sources */,
+				D18727711C09AA4600C4636E /* FilterDateView.swift in Sources */,
 				C0497B051B64AA1800AC1C6C /* EatNowDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1164,7 +1225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1186,7 +1247,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Other-Sources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cuappdev.cuad-eatery$(BUNDLE_SUFFIX)";
@@ -1227,7 +1288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1248,7 +1309,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Other-Sources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cuappdev.cuad-eatery$(BUNDLE_SUFFIX)";
@@ -1288,7 +1349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1309,7 +1370,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Other-Sources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cuappdev.cuad-eatery$(BUNDLE_SUFFIX)";
@@ -1349,7 +1410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1370,7 +1431,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Other-Sources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cuappdev.cuad-eatery$(BUNDLE_SUFFIX)";
