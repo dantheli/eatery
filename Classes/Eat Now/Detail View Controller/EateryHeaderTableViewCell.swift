@@ -10,8 +10,8 @@ import UIKit
 import DiningStack
 
 @objc protocol EateryHeaderCellDelegate {
-    optional func didTapInfoButton(cell: UITableViewCell)
-    optional func didTapToggleMenuButton(cell: UITableViewCell)
+    optional func didTapInfoButton(cell: EateryHeaderTableViewCell?)
+    optional func didTapToggleMenuButton(cell: EateryHeaderTableViewCell?)
 }
 
 class EateryHeaderTableViewCell: UITableViewCell {

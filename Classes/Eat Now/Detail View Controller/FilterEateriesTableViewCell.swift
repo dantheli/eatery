@@ -49,6 +49,15 @@ class FilterEateriesTableViewCell: UITableViewCell {
         let tapPoint = sender.locationInView(self)
         let hitView = hitTest(tapPoint, withEvent: nil)
         
+        let filterDateButtons = [firstDateView.dateButton, secondDateView.dateButton, thirdDateView.dateButton, fourthDateView.dateButton, fifthDateView.dateButton, sixthDateView.dateButton, seventhDateView.dateButton]
+        
+        for button in filterDateButtons {
+            if hitView == button {
+                delegate?.didFilterDate!(button)
+                break
+            }
+        }
+        
     }
 
 }
