@@ -29,6 +29,9 @@
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1c-VV-wU0">
                         <rect key="frame" x="243" y="15" width="69" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="69" id="Zl3-LJ-jH0"/>
+                        </constraints>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                         <state key="normal" title="Toggle Menu">
                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
@@ -48,6 +51,7 @@
                     <constraint firstItem="oBb-mc-wiI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="7FA-48-a7N"/>
                     <constraint firstItem="oBb-mc-wiI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="86e-cd-Y7M"/>
                     <constraint firstAttribute="bottom" secondItem="oBb-mc-wiI" secondAttribute="bottom" id="NrA-E0-2Po"/>
+                    <constraint firstItem="l1c-VV-wU0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5A0-7h-LTz" secondAttribute="trailing" constant="10" id="OF6-NB-Xr6"/>
                     <constraint firstAttribute="trailing" secondItem="l1c-VV-wU0" secondAttribute="trailing" constant="8" id="OMX-iY-8lq"/>
                     <constraint firstItem="5A0-7h-LTz" firstAttribute="centerY" secondItem="oBb-mc-wiI" secondAttribute="centerY" id="Scw-Qw-rZC"/>
                     <constraint firstItem="5A0-7h-LTz" firstAttribute="leading" secondItem="oBb-mc-wiI" secondAttribute="trailing" constant="5" id="h1Y-4T-dOC"/>

@@ -130,7 +130,7 @@ class EatNowTableViewController: UITableViewController, UISearchResultsUpdating,
         }
         
         //!TODO: Figure out images for eateries
-        cell.loadItem(image: e.image ?? UIImage(), name: e.name, paymentMethods: [""], hours: displayText)
+        cell.loadItem(image: e.image ?? UIImage(), name: e.nameShort, paymentMethods: [""], hours: displayText)
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         
         let active = e.favorite

@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import DiningStack
 
 @objc protocol EateryHeaderCellDelegate {
-    optional func didTapInfoButton()
-    optional func didTapToggleMenuButton()
+    optional func didTapInfoButton(cell: UITableViewCell)
+    optional func didTapToggleMenuButton(cell: UITableViewCell)
 }
 
 class EateryHeaderTableViewCell: UITableViewCell {
@@ -22,6 +23,7 @@ class EateryHeaderTableViewCell: UITableViewCell {
 
     private var tapGestureRecognizer: UITapGestureRecognizer?
     var delegate: EateryHeaderCellDelegate?
+    var eatery: Eatery?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -41,9 +43,9 @@ class EateryHeaderTableViewCell: UITableViewCell {
         let hitView = hitTest(tapPoint, withEvent: nil)
         
         if hitView == infoButton {
-            delegate?.didTapInfoButton!()
+            delegate?.didTapInfoButton!(self)
         } else if hitView == toggleMenuButton {
-            delegate?.didTapToggleMenuButton!()
+            delegate?.didTapToggleMenuButton!(self)
         }
     }
     

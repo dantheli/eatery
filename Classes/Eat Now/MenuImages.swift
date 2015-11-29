@@ -125,7 +125,7 @@ class MenuImages: NSObject {
         //create eatery name label
         let eateryNameLabel = UILabel(frame: CGRectMake(openIndicatorView.frame.origin.x + openIndicatorView.frame.width + 5, 0, 275, 50))
         eateryNameLabel.textColor = fontColor
-        eateryNameLabel.text = eatery.name
+        eateryNameLabel.text = eatery.nameShort
         eateryNameLabel.font = headerFont
         eateryNameLabel.adjustsFontSizeToFitWidth = true
         eateryNameLabel.numberOfLines = 1
