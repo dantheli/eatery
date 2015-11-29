@@ -15,41 +15,34 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tVf-wF-B7k" userLabel="Filter Dates View">
-                        <rect key="frame" x="17" y="8" width="315" height="40"/>
+                        <rect key="frame" x="6.5" y="8" width="336" height="40"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xX1-N7-xqg">
-                                <rect key="frame" x="0.0" y="0.0" width="315" height="40"/>
+                                <rect key="frame" x="0.0" y="0.0" width="336" height="40"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t1V-Y9-xtr" userLabel="Date 1" customClass="FilterDateView" customModule="Eatery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="45" height="40"/>
-                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="45" id="VXC-Xf-bnx"/>
+                                            <constraint firstAttribute="width" constant="48" id="VXC-Xf-bnx"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8cY-6h-Ms2" userLabel="Date 2" customClass="FilterDateView" customModule="Eatery" customModuleProvider="target">
-                                        <rect key="frame" x="45" y="0.0" width="45" height="40"/>
-                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="48" y="0.0" width="48" height="40"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9p4-Hf-9Tg" userLabel="Date 3" customClass="FilterDateView" customModule="Eatery" customModuleProvider="target">
-                                        <rect key="frame" x="90" y="0.0" width="45" height="40"/>
-                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="96" y="0.0" width="48" height="40"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yWi-rN-a1a" userLabel="Date 4" customClass="FilterDateView" customModule="Eatery" customModuleProvider="target">
-                                        <rect key="frame" x="135" y="0.0" width="45" height="40"/>
-                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="144" y="0.0" width="48" height="40"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3La-45-NVT" userLabel="Date 5" customClass="FilterDateView" customModule="Eatery" customModuleProvider="target">
-                                        <rect key="frame" x="180" y="0.0" width="45" height="40"/>
-                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="192" y="0.0" width="48" height="40"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q2f-mL-zD8" userLabel="Date 6" customClass="FilterDateView" customModule="Eatery" customModuleProvider="target">
-                                        <rect key="frame" x="225" y="0.0" width="45" height="40"/>
-                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="240" y="0.0" width="48" height="40"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brT-gF-6J2" userLabel="Date 7" customClass="FilterDateView" customModule="Eatery" customModuleProvider="target">
-                                        <rect key="frame" x="270" y="0.0" width="45" height="40"/>
-                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="288" y="0.0" width="48" height="40"/>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -183,16 +176,16 @@
                 </variation>
             </tableViewCellContentView>
             <connections>
-                <outlet property="fifthDateView" destination="3La-45-NVT" id="asZ-ih-Cmh"/>
+                <outlet property="fifthDateView" destination="3La-45-NVT" id="ltX-zv-MRi"/>
                 <outlet property="filterBreakfastButton" destination="RKj-13-rIY" id="iay-wV-D7a"/>
                 <outlet property="filterDinnerButton" destination="mQO-rZ-0l9" id="zbH-7P-KON"/>
                 <outlet property="filterLunchButton" destination="dJ4-Vz-GDt" id="DIl-s9-2Nc"/>
-                <outlet property="firstDateView" destination="t1V-Y9-xtr" id="giR-Ul-pze"/>
-                <outlet property="fourthDateView" destination="yWi-rN-a1a" id="6f0-Dj-wbF"/>
-                <outlet property="secondDateView" destination="8cY-6h-Ms2" id="9FV-Tt-PRH"/>
-                <outlet property="seventhDateView" destination="brT-gF-6J2" id="dK9-7w-byk"/>
-                <outlet property="sixthDateView" destination="Q2f-mL-zD8" id="TCK-kF-2HN"/>
-                <outlet property="thirdDateView" destination="9p4-Hf-9Tg" id="HXE-hp-Z1X"/>
+                <outlet property="firstDateView" destination="t1V-Y9-xtr" id="mgy-di-ZXw"/>
+                <outlet property="fourthDateView" destination="yWi-rN-a1a" id="HjH-pZ-k9K"/>
+                <outlet property="secondDateView" destination="8cY-6h-Ms2" id="Cwy-hd-9BY"/>
+                <outlet property="seventhDateView" destination="brT-gF-6J2" id="xcX-z5-shr"/>
+                <outlet property="sixthDateView" destination="Q2f-mL-zD8" id="y19-NL-SiY"/>
+                <outlet property="thirdDateView" destination="9p4-Hf-9Tg" id="Hvf-J2-ho0"/>
             </connections>
             <point key="canvasLocation" x="91" y="266"/>
         </tableViewCell>

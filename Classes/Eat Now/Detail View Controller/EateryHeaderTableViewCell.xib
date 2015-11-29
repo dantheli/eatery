@@ -64,7 +64,7 @@
                 <outlet property="eateryHoursLabel" destination="B9T-ip-Qiz" id="txb-TQ-k9s"/>
                 <outlet property="eateryNameLabel" destination="oBb-mc-wiI" id="O5q-2s-Bzz"/>
                 <outlet property="infoButton" destination="5A0-7h-LTz" id="k8b-U7-Fhs"/>
-                <outlet property="toggleMenuButton" destination="l1c-VV-wU0" id="q1O-g9-tge"/>
+                <outlet property="toggleMenuButton" destination="l1c-VV-wU0" id="7tD-m2-Nmo"/>
             </connections>
             <point key="canvasLocation" x="422" y="276.5"/>
         </tableViewCell>

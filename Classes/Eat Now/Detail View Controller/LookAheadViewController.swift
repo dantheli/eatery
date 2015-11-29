@@ -7,12 +7,12 @@
 //
 
 import UIKit
+import DiningStack
 
-class LookAheadViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, FilterEateriesViewDelegate  {
+class LookAheadViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, FilterEateriesViewDelegate, EateryHeaderCellDelegate, FilterDateViewDelegate {
 
     var sectionTitles: [String] = ["VIEW MENUS AND HOURS FOR AN UPCOMING TIME", "WEST CAMPUS EATERIES", "NORTH CAMPUS EATERIES"]
     var filteredEateries: [String] = ["Becker House Dining Room", "Bethe House Dining Room", "Cook House Dining Room", "Rose House Dining Room", "Keeton House Dining Room"]
-    var days: [String] = ["Today", "Wed", "Thurs", "Fri", "Sat", "Sun", "Mon"]
     var dates: NSMutableArray {
         let currentDates: NSMutableArray = []
         var currentDate = NSDate()
@@ -131,26 +131,45 @@ class LookAheadViewController: UIViewController, UITableViewDataSource, UITableV
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCellWithIdentifier("FilterEateriesCell") as! FilterEateriesTableViewCell
+            let dateViews = [cell.firstDateView, cell.secondDateView, cell.thirdDateView, cell.fourthDateView, cell.fifthDateView, cell.sixthDateView, cell.seventhDateView]
+            let dayStrings = getDayStrings(dates)
+            let dateStrings = getDateStrings(dates)
+            
+            for (index,dateView) in dateViews.enumerate() {
+                dateView.delegate = self
+                dateView.dateButton.tag = index
+                dateView.dayLabel.text = dayStrings[index] as? String
+                dateView.dateLabel.text = dateStrings[index] as? String
+            }
+            
+            cell.delegate = self
             
             return cell
         }
         
         let cell = tableView.dequeueReusableCellWithIdentifier("EateryHeaderCell") as! EateryHeaderTableViewCell
         
+        cell.delegate = self
         cell.eateryNameLabel.text = filteredEateries[indexPath.row]
         cell.eateryHoursLabel.text = "Open 5 PM to 8 PM"
         
         return cell
     }
     
-    // Eatery Header Cell Delegate Methods
-    
-    func didTapInfoIconButton() {
-        print("tapped info icon button")
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.layoutMargins = UIEdgeInsetsZero
+        tableView.separatorInset = UIEdgeInsetsZero
+        cell.layoutMargins = UIEdgeInsetsZero
     }
     
-    func didTapHideMenuButton(recognizer: UITapGestureRecognizer) {
-        print("tapped hide menu button")
+    // Eatery Header Cell Delegate Methods
+    
+    func didTapInfoButton() {
+        // push to detail view controller
+    }
+    
+    func didTapToggleMenuButton() {
+        // show and hide menu
     }
     
     // Filter Eateries Cell Delegate Methods
@@ -158,30 +177,30 @@ class LookAheadViewController: UIViewController, UITableViewDataSource, UITableV
     func didFilterDate(sender: UIButton?) {
         switch (sender!.tag) {
         case 0:
-            print("sender")
+            print("date 1")
         case 1:
-            print("sender")
+            print("date 2")
         case 2:
-            print("sender")
+            print("date 3")
         case 3:
-            print("sender")
+            print("date 4")
         case 4:
-            print("sender")
+            print("date 5")
         case 5:
-            print("sender")
+            print("date 6")
         default:
-            print("sender")
+            print("date 7")
         }
     }
     
     func didFilterMeal(sender: UIButton?) {
         switch (sender!.tag) {
         case 0:
-            print("sender")
+            print("breakfast")
         case 1:
-            print("sender")
+            print("lunch")
         default:
-            print("sender")
+            print("dinner")
         }
     }
 

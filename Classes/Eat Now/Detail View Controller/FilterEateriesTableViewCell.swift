@@ -26,16 +26,29 @@ class FilterEateriesTableViewCell: UITableViewCell {
     @IBOutlet weak var filterLunchButton: UIButton!
     @IBOutlet weak var filterDinnerButton: UIButton!
     
+    private var tapGestureRecognizer: UITapGestureRecognizer?
     var delegate: FilterEateriesViewDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
-       
         selectionStyle = .None
     }
     
     @IBAction func didFilterMeal(sender: UIButton?) {
-        self.delegate?.didFilterMeal!(sender)
+        delegate?.didFilterMeal!(sender)
     }
     
+    override func didMoveToWindow() {
+        tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "filterEateriesCellPressed:")
+        tapGestureRecognizer?.delegate = self
+        tapGestureRecognizer?.cancelsTouchesInView = false
+        addGestureRecognizer(tapGestureRecognizer!)
+    }
+    
+    func filterEateriesCellPressed(sender: UITapGestureRecognizer) {
+        let tapPoint = sender.locationInView(self)
+        let hitView = hitTest(tapPoint, withEvent: nil)
+        
+    }
+
 }
