@@ -13,7 +13,19 @@ class LookAheadViewController: UIViewController, UITableViewDataSource, UITableV
     var sectionTitles: [String] = ["VIEW MENUS AND HOURS FOR AN UPCOMING TIME", "WEST CAMPUS EATERIES", "NORTH CAMPUS EATERIES"]
     var filteredEateries: [String] = ["Becker House Dining Room", "Bethe House Dining Room", "Cook House Dining Room", "Rose House Dining Room", "Keeton House Dining Room"]
     var days: [String] = ["Today", "Wed", "Thurs", "Fri", "Sat", "Sun", "Mon"]
-    var dates: [Int] = [14, 15, 16, 17, 18, 19, 20]
+    var dates: NSMutableArray {
+        let currentDates: NSMutableArray = []
+        var currentDate = NSDate()
+        
+        for var i = 0; i < 7; i++ {
+            currentDates.addObject(currentDate)
+            let nextDate = NSCalendar.currentCalendar().dateByAddingUnit(.Day, value: 1, toDate: currentDate, options: NSCalendarOptions(rawValue: 0))
+            currentDate = nextDate!
+        }
+        
+        return currentDates
+    }
+    
     var tableView: UITableView!
     var sectionHeaderHeight: CGFloat = 40.0
     var eateryHeaderHeight: CGFloat = 55.0
@@ -21,8 +33,9 @@ class LookAheadViewController: UIViewController, UITableViewDataSource, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // View appearance
+        title = "Eatery Guide"
         view.backgroundColor = UIColor.groupTableViewBackgroundColor()
         
         // Navigation Controller
@@ -48,6 +61,33 @@ class LookAheadViewController: UIViewController, UITableViewDataSource, UITableV
         tableView.registerNib(UINib(nibName: "FilterEateriesTableViewCell", bundle: nil), forCellReuseIdentifier: "FilterEateriesCell")
         tableView.registerNib(UINib(nibName: "EateryHeaderTableViewCell", bundle: nil), forCellReuseIdentifier: "EateryHeaderCell")
         tableView.registerNib(UINib(nibName: "EateryMenuTableViewCell", bundle: nil), forCellReuseIdentifier: "EateryMenuCell")
+    }
+    
+    // Date Methods
+    
+    func getDayStrings(dates: NSMutableArray) -> NSMutableArray {
+        let dayStrings: NSMutableArray = ["Today"]
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "EEE"
+        dates.removeObjectAtIndex(0)
+        
+        for date in dates {
+            dayStrings.addObject(dateFormatter.stringFromDate(date as! NSDate))
+        }
+        
+        return dayStrings
+    }
+    
+    func getDateStrings(dates: NSMutableArray) -> NSMutableArray {
+        let dateStrings: NSMutableArray = []
+        let calendar = NSCalendar.currentCalendar()
+        
+        for date in dates {
+            let dayComponents = calendar.component(.Day, fromDate: date as! NSDate)
+            dateStrings.addObject(String(dayComponents))
+        }
+        
+        return dateStrings
     }
     
     // Table View Methods

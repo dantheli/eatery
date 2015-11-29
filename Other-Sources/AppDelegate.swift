@@ -39,12 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let eatNavController = UINavigationController(rootViewController: eatNow)
         eatNavController.navigationBar.barStyle = .Black
         
-        let lookAheadVC = LookAheadViewController()
-        lookAheadVC.title = "Eatery Guide"
-        let lookAheadNavController = UINavigationController(rootViewController: lookAheadVC)
-        lookAheadNavController.navigationBar.barStyle = .Black
-        
-        window?.rootViewController = lookAheadNavController
+        window?.rootViewController = eatNavController
         window?.makeKeyAndVisible()
         
         // Segment setup

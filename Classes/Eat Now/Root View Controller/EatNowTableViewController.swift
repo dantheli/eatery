@@ -79,6 +79,15 @@ class EatNowTableViewController: UITableViewController, UISearchResultsUpdating,
                 self.tableView.reloadData()
             })
         }
+        
+        // FIX: Take out when tab bar implemented
+        let barButton = UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: "goToLookAheadVC")
+        navigationItem.rightBarButtonItem = barButton
+    }
+    
+    func goToLookAheadVC() {
+        let lookAheadVC = LookAheadViewController()
+        navigationController?.pushViewController(lookAheadVC, animated: true)
     }
     
     // MARK: -
