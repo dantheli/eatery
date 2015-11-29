@@ -255,7 +255,7 @@ class LookAheadViewController: UIViewController, UITableViewDataSource, UITableV
     
     // Filter Eateries Cell Delegate Methods
     
-    func didFilterDate(cell: UITableViewCell, sender: UIButton?) {
+    func didFilterDate(sender: UIButton?) {
         switch (sender!.tag) {
         case 0:
             print("date 1")
